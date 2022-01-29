@@ -18,7 +18,7 @@ An single-page application allows employers to view a potential employee's deplo
 
 ## Images of the current website
 
-![Welp Reviews Search Results Page](./public/images/welp_reviews_1.png)
+![React Portfolio Page](./public/images/react_portfolio.png)
 
 ## License
 
