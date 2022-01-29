@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  background: wheat;
+}
+
+header {
+  background: #343a40;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+header h1 {
+  padding: 10px;
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 40px;
+  margin: 20px;
+  color: seashell;
+  font-size: 25px;
+}
+
+article p {
+  font-size: 22px;
+}
+p {
+  font-size: 18px;
+  font-family: sans-serif;
+  padding: 5px;
+  margin: 25px;
+}
+
+footer {
+  background: #343a40;
+  text-align: center;
+  color: white;
+  margin-top: 120px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+footer a {
+  text-align: center;
+  font-size: 25px;
+}
+/* Style for profile picture and paragraphs */
+.info {
+  display: flex;
+}
+
+#profilePicture:hover {
+  transform: scale(1.1);
+}
+/* Hover on 3 cards, pictures will be larger */
+.card:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.products {
+  background-color: white;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#profilePicture {
+  width: 200px;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 30px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.card {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+  padding: 10px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  margin: 20px;
+  /* transform: rotate(8deg); */
+  width: 25%;
+  height: 100%;
+  justify-content: center;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* Prevent link access from modifying the text style */
+.link {
+  text-decoration: none;
+}
+
+.card header {
+  border-radius: 50px 50px 0px 0px;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+}
+
+.card p {
+  text-align: center !important ;
+  color: black;
+}
+/* Images in the cards have 100% width */
+.card img {
+  width: 100%;
+}
+
+.project-title:hover {
+  background-color: wheat;
+  color: rgb(12, 102, 138);
+}
+
+.sign-in-box {
+  margin: 0 auto;
+  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  justify-content: center;
+}
+form .form-input {
+  width: 100%;
+  padding: 0.75rem;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  margin: 0.625rem 0;
+  font-size: 1.2rem;
+  border: 1px solid #484848;
+  border-radius: 0.3rem;
+}
+
+#resume-container {
+  /* text-align: center; */
+  font-weight: bold;
+  padding: 50px;
+}
+
+#resume-link {
+  text-decoration: none;
+}
+
+.resume-list {
+  font-size: larger;
+}
+
+.resume-list-title {
+  font-family: fantasy;
+}
+
+.active {
+  background: brown;
+  padding: 10px;
+}
+a:hover {
+  color: chocolate !important;
+}
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    padding: 10px;
+  }
+}
+
+/* Large smartphones - header changes color */
+/* @media screen and (max-width: 768px) {
+  header footer {
+    background-color: #bb8588;
+  }
+} */
+
+/* Small smartphones - header changes color */
+/* @media screen and (max-width: 576px) {
+  header {
+    background-color: #8ac4ff;
+  }
+} */
